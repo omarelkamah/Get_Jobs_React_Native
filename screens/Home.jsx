@@ -1,10 +1,18 @@
-import { View, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
+import Nearbyjobs from '../components/home/nearby/Nearbyjobs'
+import HomeHeader from '../components/home/homeHeader/HomeHeader'
+import styles from '../constants/mainStyle.style'
+import Welcome from '../components/home/welcome/Welcome'
+import Popularjobs from '../components/home/popular/Popularjobs'
 
 const Home = () => {
   return (
-    <View>
-      <Text>Homef page</Text>
-    </View>
+    <SafeAreaView style={styles.mainContainer}>
+        <HomeHeader />
+        <Welcome />
+        <Popularjobs />
+        <Nearbyjobs />
+    </SafeAreaView>
   )
 }
 
